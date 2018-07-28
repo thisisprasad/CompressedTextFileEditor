@@ -36,13 +36,9 @@
 			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			this.fileChoosebtn = new System.Windows.Forms.Button();
 			this.msglbl = new System.Windows.Forms.Label();
-			this.strbtn = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
 			this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-			this.fonttxt = new System.Windows.Forms.TextBox();
 			this.savebtn = new System.Windows.Forms.Button();
 			this.savasbtn = new System.Windows.Forms.Button();
-			this.newfilebtn = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// btn
@@ -106,44 +102,17 @@
 			// msglbl
 			// 
 			this.msglbl.AutoSize = true;
-			this.msglbl.Location = new System.Drawing.Point(600, 9);
+			this.msglbl.Location = new System.Drawing.Point(406, 14);
 			this.msglbl.Name = "msglbl";
 			this.msglbl.Size = new System.Drawing.Size(49, 13);
 			this.msglbl.TabIndex = 5;
 			this.msglbl.Text = "Message";
 			this.msglbl.Click += new System.EventHandler(this.label1_Click_1);
 			// 
-			// strbtn
-			// 
-			this.strbtn.Location = new System.Drawing.Point(492, 10);
-			this.strbtn.Name = "strbtn";
-			this.strbtn.Size = new System.Drawing.Size(75, 23);
-			this.strbtn.TabIndex = 6;
-			this.strbtn.Text = "check string";
-			this.strbtn.UseVisualStyleBackColor = true;
-			this.strbtn.Click += new System.EventHandler(this.strbtn_Click);
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(171, 39);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(67, 13);
-			this.label1.TabIndex = 7;
-			this.label1.Text = "Font size:";
-			// 
 			// notifyIcon1
 			// 
 			this.notifyIcon1.Text = "notifyIcon1";
 			this.notifyIcon1.Visible = true;
-			// 
-			// fonttxt
-			// 
-			this.fonttxt.Location = new System.Drawing.Point(229, 37);
-			this.fonttxt.Name = "fonttxt";
-			this.fonttxt.Size = new System.Drawing.Size(43, 20);
-			this.fonttxt.TabIndex = 8;
-			this.fonttxt.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
 			// 
 			// savebtn
 			// 
@@ -165,27 +134,13 @@
 			this.savasbtn.UseVisualStyleBackColor = true;
 			this.savasbtn.Click += new System.EventHandler(this.button1_Click_4);
 			// 
-			// newfilebtn
-			// 
-			this.newfilebtn.Location = new System.Drawing.Point(363, 9);
-			this.newfilebtn.Name = "newfilebtn";
-			this.newfilebtn.Size = new System.Drawing.Size(75, 23);
-			this.newfilebtn.TabIndex = 11;
-			this.newfilebtn.Text = "New file";
-			this.newfilebtn.UseVisualStyleBackColor = true;
-			this.newfilebtn.Click += new System.EventHandler(this.button2_Click);
-			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(913, 512);
-			this.Controls.Add(this.newfilebtn);
 			this.Controls.Add(this.savasbtn);
 			this.Controls.Add(this.savebtn);
-			this.Controls.Add(this.fonttxt);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.strbtn);
 			this.Controls.Add(this.msglbl);
 			this.Controls.Add(this.fileChoosebtn);
 			this.Controls.Add(this.txtEditor);
@@ -210,13 +165,9 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button fileChoosebtn;
         private System.Windows.Forms.Label msglbl;
-        private System.Windows.Forms.Button strbtn;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.TextBox fonttxt;
         private System.Windows.Forms.Button savebtn;
         private System.Windows.Forms.Button savasbtn;
-		private System.Windows.Forms.Button newfilebtn;
 	}
 }
 

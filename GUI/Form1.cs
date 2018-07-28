@@ -179,11 +179,11 @@ namespace GUI
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
-            if (fonttxt.Text == "") return;
-            double sz = double.Parse(fonttxt.Text);
+            //	if (fonttxt.Text == "") return;
+            //	double sz = double.Parse(fonttxt.Text);
             //  Code to change the size of text of txteditor
             //  txtEditor.Font.Size = new System.Drawing.Font((System.Drawing.Font))txtEditor.Font.Name, (System.Drawing.FontStyle)sz);
-            sz = txtEditor.Font.Size;   
+            //	sz = txtEditor.Font.Size;   
         }
 
 		private void button1_Click_3(object sender, EventArgs e)
@@ -205,8 +205,10 @@ namespace GUI
 					int res = solveName(fileName, fileName.Length, 1);  //	Compress the file
 					checkRes(res);
 					flag = false;
+					string en = fileName; en += ".en";
+					if (File.Exists(en)) File.Delete(fileName);
 				}
-				File.Delete(fileName);
+				//	File.Delete(fileName);
 			}
 			else
 			{
@@ -280,6 +282,8 @@ namespace GUI
 
 		private void button2_Click(object sender, EventArgs e)
 		{
+			msglbl.Text = "";
+			txtEditor.Text = "";
 			//	msglbl.Text = "this is a new file";
 			//	txtEdi
 		}
