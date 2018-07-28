@@ -14,6 +14,8 @@ namespace GUI
         [STAThread]
         static void Main()
         {
+            Console.WriteLine("This C# Main()");
+            //  Console.Read();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
